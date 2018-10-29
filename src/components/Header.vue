@@ -1,7 +1,7 @@
 <template>
   <div class="head">
     <el-row>
-       <!-- S 头部logo模块 -->
+      <!-- S 头部logo模块 -->
       <el-col :span="6"
               class="left">
         <h1 class="logo">
@@ -10,7 +10,7 @@
         </h1>
       </el-col>
       <!-- E 头部logo模块  -->
-       <!-- S 头部导航模块 -->
+      <!-- S 头部导航模块 -->
       <el-col :span="18"
               class="right">
         <ul class="nav clearfix"
@@ -21,8 +21,8 @@
               @mouseover="setMouseOver(item)"
               @click="setClick(item)">
             <router-link class="nav__item-link"
-                        :class="{'nav__item_current':item.state}"
-                        :to="{name:item.router}">
+                         :class="{'nav__item_current':item.state}"
+                         :to="{name:item.router}">
               {{ item.name }}
             </router-link>
           </li>
@@ -31,7 +31,7 @@
         <span class="slide"
               :style="slideObject"></span>
         <!-- /滑动条 -->
-        </el-col>
+      </el-col>
       <!-- E 头部导航模块 -->
     </el-row>
   </div>
@@ -127,6 +127,7 @@ h1 {
   }
 }
 .nav__item-link {
+  display: block;
   font-family: 'Microsoft YaHei', sans-serif;
   font-size: 18px;
   text-decoration: none;
@@ -146,5 +147,4 @@ h1 {
   width: 100px;
   background: @bg;
 }
-
 </style>

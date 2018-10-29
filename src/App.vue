@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="header">         
+    <div class="header">
       <headlist></headlist>
     </div>
 
@@ -11,13 +11,9 @@
     <div class="tips">
       <tips></tips>
     </div>
-    
-    <hr>
-    
     <div class="foot">
       <foot></foot>
-    </div> 
-     
+    </div>
 
   </div>
 </template>
@@ -28,7 +24,7 @@ import foot from "@/components/Foot"
 import headlist from '@/components/Header'
 export default {
   name: 'App',
-  components:{
+  components: {
     foot,
     tips,
     headlist
@@ -39,7 +35,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+@import 'assets/styles/index.less';
 #app {
   font-family: '微软雅黑', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -48,24 +45,20 @@ export default {
   color: #2c3e50;
   width: 1200px;
   margin: 0 auto;
-  background-color:#d9e0e7
+  background-color: #f1f4f9;
 }
 .header {
   border-top: 1px solid #d2d5da;
   background-color: white;
 }
-.foot{
-  margin-top: 10px;
+.foot {
+  background: #fff;
 }
-.tips{
-  margin-top: 40px;
+.tips {
   float: none;
 }
 
-.router{
+.router {
   margin: 0 auto;
 }
-
-
-
 </style>
